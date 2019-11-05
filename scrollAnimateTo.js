@@ -17,5 +17,6 @@ const scrollAnimateTo = (elementOffsetTop, speed) => {
   page.on('scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove', () => {
     page.stop();
   });
+  return false;
 };
 export default scrollAnimateTo;
